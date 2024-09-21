@@ -5,7 +5,7 @@ export const Header: React.FC = () => (
   <header className="bg-red-600 text-white shadow-md">
     <div className="container mx-auto px-6 py-4">
       <div className="flex justify-between items-center">
-        <h1 className="text-3xl font-bold">BATWO Catalyst</h1>
+        <Link href="/" className="text-3xl font-bold">BATWO Catalyst</Link>
         <nav>
           <ul className="flex space-x-4">
             <li><Link href="/" className="hover:text-gray-200">Dashboard</Link></li>
