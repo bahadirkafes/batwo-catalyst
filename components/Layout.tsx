@@ -1,26 +1,23 @@
-import React, { ReactNode } from 'react'
 import Head from 'next/head'
+import React from 'react'
+import { Footer } from './Footer'
+import { Header } from './Header'
 
-type Props = {
-  children?: ReactNode
+interface LayoutProps {
+  children: React.ReactNode
   title?: string
 }
 
-const Layout = ({ children, title = 'BATWO Catalyst' }: Props) => (
-  <div>
+export const Layout: React.FC<LayoutProps> = ({ children, title = 'BATWO Catalyst' }) => (
+  <div className="min-h-screen bg-gray-100">
     <Head>
       <title>{title}</title>
-      <meta charSet="utf-8" />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <link rel="icon" href="/favicon.ico" />
     </Head>
-    <header>
-      {/* Header content */}
-    </header>
-    {children}
-    <footer>
-      {/* Footer content */}
-    </footer>
+    <Header />
+    <main className="container mx-auto px-6 py-8">
+      {children}
+    </main>
+    <Footer />
   </div>
 )
-
-export default Layout
