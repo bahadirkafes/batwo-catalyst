@@ -1,0 +1,10 @@
+{
+  "settings": "Settings",
+  "username": "Username",
+  "email": "Email",
+  "language": "Language",
+  "notifications": "Enable email notifications",
+  "save": "Save settings",
+  "success": "Settings saved successfully",
+  "error": "Error saving settings"
+}

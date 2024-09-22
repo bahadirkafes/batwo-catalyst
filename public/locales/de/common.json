@@ -1,0 +1,10 @@
+{
+  "settings": "Einstellungen",
+  "username": "Benutzername",
+  "email": "E-Mail",
+  "language": "Sprache",
+  "notifications": "E-Mail-Benachrichtigungen aktivieren",
+  "save": "Einstellungen speichern",
+  "success": "Einstellungen erfolgreich gespeichert",
+  "error": "Fehler beim Speichern der Einstellungen"
+}
